@@ -71,6 +71,7 @@ const contentData: ContentData = {
         '500 KB knowledge size',
         'Integrasi WhatsApp',
         'AI Response otomatis',
+        'Google Sheets integration',
         'Support email'
       ],
       buttonText: 'Daftar Sekarang',
