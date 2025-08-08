@@ -68,7 +68,7 @@ const contentData: ContentData = {
       features: [
         '200.000 token per bulan',
         '10.000 karakter maksimal',
-        '0 bytes knowledge size',
+        '500 kilobytes knowledge size',
         'Integrasi WhatsApp',
         'AI Response otomatis',
         'Support email'
@@ -152,10 +152,6 @@ const contentData: ContentData = {
     {
       title: 'Custom Training',
       description: 'Latih AI sesuai dengan tone dan style bisnis Anda untuk hasil yang lebih personal.'
-    },
-    {
-      title: 'Analytics Dashboard',
-      description: 'Monitor performa chat, conversion rate, dan customer satisfaction dalam satu dashboard.'
     },
     {
       title: 'Jawaban Otomatis 24/7',

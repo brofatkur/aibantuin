@@ -1,11 +1,11 @@
 import React from 'react';
-import { Brain, MessageSquare, Database, Palette, BarChart3, Clock, Zap } from 'lucide-react';
+import { Brain, MessageSquare, Database, Palette, Clock, Zap } from 'lucide-react';
 import { useContent } from '../contexts/ContentContext';
 
 const Features: React.FC = () => {
   const { contentData } = useContent();
 
-  const featureIcons = [Brain, MessageSquare, Database, Palette, BarChart3, Clock, Zap];
+  const featureIcons = [Brain, MessageSquare, Database, Palette, Clock, Zap];
 
   const featuresWithIcons = contentData.features.map((feature, index) => ({
     ...feature,
