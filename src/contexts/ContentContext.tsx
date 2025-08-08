@@ -68,12 +68,12 @@ const contentData: ContentData = {
       features: [
         '200.000 token per bulan',
         '10.000 karakter maksimal',
-        '500 kilobytes knowledge size',
+        '500 KB knowledge size',
         'Integrasi WhatsApp',
         'AI Response otomatis',
         'Support email'
       ],
-      buttonText: 'Coba Sekarang',
+      buttonText: 'Daftar Sekarang',
       popular: false
     },
     {
@@ -90,7 +90,7 @@ const contentData: ContentData = {
         'Google Sheets integration',
         'Priority support'
       ],
-      buttonText: 'Coba Sekarang',
+      buttonText: 'Daftar Sekarang',
       popular: true
     },
     {
@@ -102,12 +102,13 @@ const contentData: ContentData = {
         '1.000.000 token per bulan',
         '50.000 karakter maksimal',
         '10 MB knowledge size',
-        'Unlimited WhatsApp integration',
-        'Advanced AI features',
-        'Custom integrations',
-        'Dedicated support'
+        'Integrasi WhatsApp',
+        'AI Response otomatis',
+        'Google Sheets integration',
+        'Priority support',
+        'Custom training'
       ],
-      buttonText: 'Coba Sekarang',
+      buttonText: 'Daftar Sekarang',
       popular: false
     }
   ],

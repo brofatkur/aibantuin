@@ -43,7 +43,7 @@ const Pricing: React.FC = () => {
                   {tier.name}
                 </h3>
 
-                <div className="mb-4">
+                <div className="mb-6">
                   <span className={`text-3xl sm:text-4xl font-bold ${
                     index === 1 ? 'text-white' : 'text-blue-600'
                   }`}>
@@ -55,16 +55,10 @@ const Pricing: React.FC = () => {
                     / bulan
                   </span>
                 </div>
-
-                <div className={`text-lg sm:text-xl font-semibold mb-6 ${
-                  index === 1 ? 'text-blue-100' : 'text-blue-600'
-                }`}>
-                  {tier.tokens}
-                </div>
               </div>
 
               <div className="space-y-4 mb-8">
-                <div className="flex items-start space-x-3">
+                <div className="flex items-start space-x-3 mb-4">
                   <Check className={`w-5 h-5 flex-shrink-0 mt-0.5 ${
                     index === 1 ? 'text-blue-200' : 'text-green-500'
                   }`} />
@@ -74,6 +68,19 @@ const Pricing: React.FC = () => {
                     Cocok untuk: {tier.description}
                   </span>
                 </div>
+
+                {tier.features.map((feature, featureIndex) => (
+                  <div key={featureIndex} className="flex items-start space-x-3">
+                    <Check className={`w-4 h-4 flex-shrink-0 mt-1 ${
+                      index === 1 ? 'text-blue-200' : 'text-green-500'
+                    }`} />
+                    <span className={`text-sm ${
+                      index === 1 ? 'text-blue-100' : 'text-gray-600'
+                    }`}>
+                      {feature}
+                    </span>
+                  </div>
+                ))}
               </div>
 
               <a
@@ -86,7 +93,7 @@ const Pricing: React.FC = () => {
                     : 'bg-blue-600 text-white hover:bg-blue-700'
                 }`}
               >
-                {tier.ctaText}
+                {tier.buttonText}
               </a>
             </div>
           ))}

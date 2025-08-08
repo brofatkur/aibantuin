@@ -68,7 +68,7 @@ export const pricingTiers: PricingTier[] = [
     price: 'Rp 99.000',
     tokens: '200.000 Token',
     description: 'Owner bisnis solo atau yang baru memulai.',
-    ctaText: 'Pilih Paket Starter'
+    ctaText: 'Daftar Sekarang'
   },
   {
     name: 'BISNIS PRO',
@@ -76,14 +76,14 @@ export const pricingTiers: PricingTier[] = [
     tokens: '600.000 Token',
     description: 'Bisnis online dan offline yang sedang berkembang.',
     popular: true,
-    ctaText: 'Pilih Paket Bisnis'
+    ctaText: 'Daftar Sekarang'
   },
   {
     name: 'SCALE-UP',
     price: 'Rp 399.000',
     tokens: '1 Juta Token',
     description: 'Tim atau bisnis dengan volume chat tinggi.',
-    ctaText: 'Pilih Paket Scale-Up'
+    ctaText: 'Daftar Sekarang'
   }
 ];
 
