@@ -299,7 +299,10 @@ const AdminDashboard: React.FC = () => {
             </p>
             {contentData.logoType === 'custom' && (
               <button
-                onClick={() => updateContent('logoType', 'default')}
+                onClick={() => {
+                  updateContent('logoType', 'default');
+                  updateContent('logoUrl', '/src/assets/aibantuin-logo-gelap.png');
+                }}
                 className="text-sm text-red-600 hover:text-red-700 transition-colors"
               >
                 Reset to Default Logo

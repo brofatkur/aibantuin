@@ -164,7 +164,7 @@ const defaultContentData: ContentData = {
     }
   ],
 
-  logoUrl: '',
+  logoUrl: '/src/assets/aibantuin-logo-gelap.png',
   logoType: 'default',
 
   ctaButtons: {

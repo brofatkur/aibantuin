@@ -15,13 +15,13 @@ const Logo: React.FC<LogoProps> = ({ className = '', width = 200, height = 60, v
 
 
 
-  // If custom logo is uploaded, use it
-  if (contentData.logoType === 'custom' && contentData.logoUrl) {
+  // If there's a logo URL (either default or custom), use it
+  if (contentData.logoUrl) {
     return (
       <div className={`inline-flex items-center ${className}`}>
         <img
           src={contentData.logoUrl}
-          alt="Logo"
+          alt="AI Bantuin Logo"
           width={width}
           height={height}
           className="object-contain"
