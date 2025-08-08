@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { MessageCircle, Zap, CheckCircle } from 'lucide-react';
-import { useAdmin } from '../contexts/AdminContext';
+import { useContent } from '../contexts/ContentContext';
 
 const HeroSection: React.FC = () => {
-  const { contentData } = useAdmin();
+  const { contentData } = useContent();
 
   return (
     <section className="relative bg-gradient-to-br from-gray-50 to-blue-50 pt-8 pb-20 lg:pt-16 lg:pb-32">

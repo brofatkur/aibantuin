@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Logo from './Logo';
-import { useAdmin } from '../contexts/AdminContext';
+import { useContent } from '../contexts/ContentContext';
 
 const Header: React.FC = () => {
-  const { contentData } = useAdmin();
+  const { contentData } = useContent();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (

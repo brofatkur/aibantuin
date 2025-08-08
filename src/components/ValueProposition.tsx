@@ -1,9 +1,9 @@
 import React from 'react';
 import * as Icons from 'lucide-react';
-import { useAdmin } from '../contexts/AdminContext';
+import { useContent } from '../contexts/ContentContext';
 
 const ValueProposition: React.FC = () => {
-  const { contentData } = useAdmin();
+  const { contentData } = useContent();
 
   const getIcon = (iconName: string) => {
     const IconComponent = Icons[iconName as keyof typeof Icons] as React.ComponentType<{ className?: string }>;

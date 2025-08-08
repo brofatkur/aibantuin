@@ -1,9 +1,9 @@
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
-import { useAdmin } from '../contexts/AdminContext';
+import { useContent } from '../contexts/ContentContext';
 
 const WhatsAppFloat: React.FC = () => {
-  const { contentData } = useAdmin();
+  const { contentData } = useContent();
 
   const handleWhatsAppClick = () => {
     const phoneNumber = contentData.whatsappNumber;

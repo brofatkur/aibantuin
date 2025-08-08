@@ -1,10 +1,10 @@
 import React from 'react';
 import { MessageCircle, Instagram, Mail, Zap } from 'lucide-react';
 import Logo from './Logo';
-import { useAdmin } from '../contexts/AdminContext';
+import { useContent } from '../contexts/ContentContext';
 
 const Footer: React.FC = () => {
-  const { contentData } = useAdmin();
+  const { contentData } = useContent();
 
   return (
     <footer className="bg-gray-900 text-white py-16">
@@ -52,9 +52,9 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-base sm:text-lg mb-6">Contact & Legal</h4>
             <ul className="space-y-3 mb-6">
-              <li><a href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
-              <li><a href="/terms-conditions" className="text-gray-400 hover:text-white transition-colors text-sm">Terms & Conditions</a></li>
-              <li><a href="/support" className="text-gray-400 hover:text-white transition-colors text-sm">Support</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Terms & Conditions</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Support</a></li>
             </ul>
 
             <div className="flex space-x-4">

@@ -1,34 +1,25 @@
-# AI Bantuin - Landing Page & Admin Dashboard
+# AI Bantuin - High-Performance Landing Page
 
-A complete landing page and content management system for AI Bantuin, a WhatsApp AI chatbot service.
+A lightning-fast, mobile-first landing page for AI Bantuin, a WhatsApp AI chatbot service. Optimized for speed and conversions.
 
 ## 🚀 Features
 
-### Landing Page
-- **Responsive Design** - Works perfectly on desktop, tablet, and mobile
-- **Modern UI/UX** - Professional design with smooth animations
-- **WhatsApp Integration** - Direct contact via WhatsApp
-- **SEO Optimized** - Proper meta tags and structure
-- **Fast Loading** - Optimized for performance
-
-### Admin Dashboard
-- **Complete CMS** - Manage all website content without coding
-- **Logo Management** - Upload and manage custom logos
-- **Content Editor** - Edit hero section, pricing, testimonials, features
-- **Page Management** - Rich text editor for Privacy Policy, Terms & Conditions, Support
-- **CTA Management** - Edit all button texts across the website
-- **Real-time Updates** - Changes appear immediately on the website
-- **Secure Authentication** - Protected admin routes
+### Landing Page Features
+- **⚡ Lightning Fast** - Optimized for Core Web Vitals and mobile performance
+- **📱 Mobile-First** - Perfect responsive design for all devices
+- **🎯 Conversion Focused** - Strategic CTAs and user flow
+- **🚀 Modern UI/UX** - Professional design with smooth animations
+- **💬 WhatsApp Integration** - Direct contact via WhatsApp
+- **🔍 SEO Optimized** - Proper meta tags and structure
+- **⚡ Super Fast Loading** - Minimal bundle size and optimized assets
 
 ## 🛠️ Tech Stack
 
 - **Frontend**: React 18 + TypeScript
-- **Styling**: Tailwind CSS
-- **Routing**: React Router DOM
-- **Rich Text Editor**: React Quill
-- **Icons**: Lucide React
-- **Build Tool**: Vite
-- **Deployment**: Ready for Netlify/Cloudflare
+- **Styling**: Tailwind CSS (optimized)
+- **Icons**: Lucide React (minimal bundle)
+- **Build Tool**: Vite (super fast)
+- **Deployment**: Netlify/Cloudflare optimized
 
 ## 📦 Installation
 
