@@ -13,7 +13,7 @@ const Logo: React.FC<LogoProps> = ({ className = '', width = 200, height = 60, v
   const isFooter = variant === 'footer';
 
   // Use white logo for footer, dark logo for other variants
-  const logoUrl = isFooter ? '/src/assets/aibantuin-logo-putih.png' : contentData.logoUrl;
+  const logoUrl = isFooter ? '/aibantuin-logo-putih.png' : contentData.logoUrl;
 
   return (
     <div className={`inline-flex items-center ${className}`}>

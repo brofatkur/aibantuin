@@ -33,7 +33,7 @@ export const customerSegments: CustomerSegment[] = [
       'Jawab otomatis ketersediaan stok',
       'Detail produk dan spesifikasi',
       'Informasi ongkos kirim',
-      'Proses pesanan otomatis'
+      'Konsultan online customer'
     ]
   },
   {
@@ -51,7 +51,7 @@ export const customerSegments: CustomerSegment[] = [
   {
     id: 'solo',
     title: 'Owner Bisnis Solo',
-    description: 'Solopreneur',
+    description: 'Starter',
     visual: 'Fokus pada strategi, biarkan AI jadi CS pertama Anda',
     points: [
       'Tangani pertanyaan rutin otomatis',
@@ -64,11 +64,11 @@ export const customerSegments: CustomerSegment[] = [
 
 export const pricingTiers: PricingTier[] = [
   {
-    name: 'SOLOPRENEUR',
+    name: 'STARTER',
     price: 'Rp 99.000',
     tokens: '200.000 Token',
     description: 'Owner bisnis solo atau yang baru memulai.',
-    ctaText: 'Pilih Paket Solo'
+    ctaText: 'Pilih Paket Starter'
   },
   {
     name: 'BISNIS PRO',

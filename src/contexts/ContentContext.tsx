@@ -143,7 +143,7 @@ const contentData: ContentData = {
     },
     {
       title: 'Integrasi WhatsApp',
-      description: 'Setup mudah dengan WhatsApp Business API. Tidak perlu aplikasi tambahan.'
+      description: 'Setup mudah dengan WhatsApp. Tidak perlu aplikasi tambahan.'
     },
     {
       title: 'Google Sheets Sync',
@@ -163,7 +163,7 @@ const contentData: ContentData = {
     }
   ],
   
-  logoUrl: '/src/assets/aibantuin-logo-gelap.png',
+  logoUrl: '/aibantuin-logo-gelap.png',
   
   ctaButtons: {
     heroButton: 'Coba Demo Sekarang',

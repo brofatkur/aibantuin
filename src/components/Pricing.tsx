@@ -94,7 +94,7 @@ const Pricing: React.FC = () => {
 
         <div className="text-center mt-12">
           <p className="text-sm sm:text-base text-gray-600 bg-gray-50 p-4 sm:p-6 rounded-2xl inline-block max-w-2xl">
-            <strong>Apa itu Token?</strong> 1000 token setara dengan ~750 kata. Paket Solopreneur cukup untuk ratusan percakapan detail setiap bulan.
+            <strong>Apa itu Token?</strong> 1000 token setara dengan ~750 kata. Paket Starter cukup untuk ratusan percakapan detail setiap bulan.
           </p>
         </div>
       </div>
