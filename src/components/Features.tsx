@@ -1,39 +1,17 @@
 import React from 'react';
-import { Brain, Sheet, Globe, Shield, Image, Clock } from 'lucide-react';
+import { Brain, MessageSquare, Database, Palette, BarChart3, Clock, Zap } from 'lucide-react';
+import { useContent } from '../contexts/ContentContext';
 
 const Features: React.FC = () => {
-  const advancedFeatures = [
-    {
-      icon: Brain,
-      title: 'Didukung AI Gemini Google',
-      description: 'Memahami percakapan natural, bukan sekadar bot kaku.',
-      status: 'active'
-    },
-    {
-      icon: Sheet,
-      title: 'Integrasi Real-time Google Sheets',
-      description: 'Update info produk, stok, atau jadwal langsung dari Google Sheets.',
-      status: 'active'
-    },
-    {
-      icon: Globe,
-      title: 'Hiper-Multibahasa',
-      description: 'Melayani pelanggan dari seluruh dunia, bahkan dalam bahasa daerah.',
-      status: 'active'
-    },
-    {
-      icon: Shield,
-      title: 'Teruji di Pasar Nyata',
-      description: 'Sistem stabil dan telah dipercaya untuk menangani ribuan percakapan setiap hari.',
-      status: 'active'
-    },
-    {
-      icon: Image,
-      title: 'Balasan Gambar & Media',
-      description: 'Kirim brosur, gambar produk, atau info visual lainnya secara otomatis.',
-      status: 'coming-soon'
-    }
-  ];
+  const { contentData } = useContent();
+
+  const featureIcons = [Brain, MessageSquare, Database, Palette, BarChart3, Clock, Zap];
+
+  const featuresWithIcons = contentData.features.map((feature, index) => ({
+    ...feature,
+    icon: featureIcons[index] || Brain,
+    status: 'active'
+  }));
 
   return (
     <section id="features" className="py-20 bg-white">
@@ -45,28 +23,12 @@ const Features: React.FC = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {advancedFeatures.map((feature, index) => (
+          {featuresWithIcons.map((feature, index) => (
             <div
               key={index}
-              className={`relative group p-6 sm:p-8 rounded-2xl transition-all transform hover:scale-105 ${
-                feature.status === 'coming-soon' 
-                  ? 'bg-gradient-to-br from-orange-50 to-orange-100 border-2 border-orange-200' 
-                  : 'bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-xl'
-              }`}
+              className="relative group p-6 sm:p-8 rounded-2xl transition-all transform hover:scale-105 bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-2xl hover:neon-border glass-effect"
             >
-              {feature.status === 'coming-soon' && (
-                <div className="absolute top-4 right-4">
-                  <span className="bg-orange-500 text-white text-xs px-2 sm:px-3 py-1 rounded-full font-semibold">
-                    Coming Soon: September
-                  </span>
-                </div>
-              )}
-
-              <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${
-                feature.status === 'coming-soon' 
-                  ? 'bg-orange-200 text-orange-600' 
-                  : 'bg-blue-200 text-blue-600'
-              }`}>
+              <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg group-hover:animate-float">
                 <feature.icon className="w-8 h-8" />
               </div>
 

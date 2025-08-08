@@ -57,55 +57,57 @@ const contentData: ContentData = {
   heroTitle: "AI Bantuin: Asisten WhatsApp Anda yang Balas Chat Pelanggan 24/7",
   heroSubtitle: "Tingkatkan penjualan dan kepuasan pelanggan dengan balasan otomatis yang cerdas, detail, dan konsisten. Didukung AI Gemini dari Google.",
   heroButtonText: "Coba Demo Sekarang",
-  heroTagline: "Cepat Balas, Hemat Biaya, Tanpa Ribet.",
+  heroTagline: "Balas Cepat, Hemat & Gak Ribet",
   
   pricingTiers: [
     {
-      name: 'SOLOPRENEUR',
+      name: 'STARTER',
       price: 'Rp 99.000',
-      originalPrice: 'Rp 199.000',
+      originalPrice: 'Rp 1.100.000',
       description: 'Cocok untuk bisnis kecil dan freelancer',
       features: [
-        '1.000 token per bulan',
+        '200.000 token per bulan',
+        '10.000 karakter maksimal',
+        '0 bytes knowledge size',
         'Integrasi WhatsApp',
         'AI Response otomatis',
-        'Dashboard analytics',
         'Support email'
       ],
-      buttonText: 'Mulai Sekarang',
+      buttonText: 'Coba Sekarang',
       popular: false
     },
     {
-      name: 'STARTUP',
-      price: 'Rp 199.000',
-      originalPrice: 'Rp 399.000',
-      description: 'Ideal untuk startup dan bisnis berkembang',
+      name: 'BISNIS PRO',
+      price: 'Rp 249.000',
+      originalPrice: 'Rp 2.500.000',
+      description: 'Ideal untuk bisnis berkembang',
       features: [
-        '5.000 token per bulan',
+        '600.000 token per bulan',
+        '30.000 karakter maksimal',
+        '5 MB knowledge size',
         'Integrasi WhatsApp',
         'AI Response otomatis',
         'Google Sheets integration',
-        'Custom AI training',
         'Priority support'
       ],
-      buttonText: 'Pilih Paket',
+      buttonText: 'Coba Sekarang',
       popular: true
     },
     {
-      name: 'BUSINESS',
+      name: 'SCALE UP',
       price: 'Rp 399.000',
-      originalPrice: 'Rp 799.000',
+      originalPrice: 'Rp 4.000.000',
       description: 'Untuk bisnis besar dengan volume tinggi',
       features: [
-        '15.000 token per bulan',
+        '1.000.000 token per bulan',
+        '50.000 karakter maksimal',
+        '10 MB knowledge size',
         'Unlimited WhatsApp integration',
         'Advanced AI features',
-        'Multi-platform support',
         'Custom integrations',
-        'Dedicated support',
-        'Analytics & reporting'
+        'Dedicated support'
       ],
-      buttonText: 'Hubungi Sales',
+      buttonText: 'Coba Sekarang',
       popular: false
     }
   ],
@@ -158,6 +160,10 @@ const contentData: ContentData = {
     {
       title: 'Jawaban Otomatis 24/7',
       description: 'Layani pelanggan bahkan saat Anda tidur. Jawaban konsisten, detail, dan tidak pernah lelah.'
+    },
+    {
+      title: 'Balas dalam Hitungan Detik',
+      description: 'Response time super cepat 24 jam non-stop. Pelanggan tidak perlu menunggu lama.'
     }
   ],
   

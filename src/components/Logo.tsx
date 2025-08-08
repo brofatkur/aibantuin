@@ -11,14 +11,14 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ className = '', width = 200, height = 60, variant = 'default' }) => {
   const { contentData } = useContent();
   const isFooter = variant === 'footer';
-  const gradientId = `headGradient-${variant}-${Math.random().toString(36).substr(2, 9)}`;
 
-
+  // Use white logo for footer, dark logo for other variants
+  const logoUrl = isFooter ? '/src/assets/aibantuin-logo-putih.png' : contentData.logoUrl;
 
   return (
     <div className={`inline-flex items-center ${className}`}>
       <img
-        src={contentData.logoUrl}
+        src={logoUrl}
         alt="AI Bantuin Logo"
         width={width}
         height={height}

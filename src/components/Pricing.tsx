@@ -23,8 +23,8 @@ const Pricing: React.FC = () => {
               key={index}
               className={`relative rounded-3xl p-6 sm:p-8 transition-all transform hover:scale-105 ${
                 index === 1 // Middle tier is popular
-                  ? 'bg-blue-600 text-white shadow-2xl sm:scale-105 border-4 border-blue-200'
-                  : 'bg-white border-2 border-gray-200 hover:shadow-xl'
+                  ? 'bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-2xl sm:scale-105 neon-border animate-glow'
+                  : 'bg-white border-2 border-gray-200 hover:shadow-xl hover:neon-border glass-effect'
               }`}
             >
               {index === 1 && (

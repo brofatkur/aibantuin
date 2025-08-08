@@ -1,9 +1,11 @@
 import React from 'react';
-import { Quote, Star } from 'lucide-react';
+import { Quote, TrendingUp, Clock, Heart } from 'lucide-react';
 import { useContent } from '../contexts/ContentContext';
 
 const Testimonials: React.FC = () => {
   const { contentData } = useContent();
+
+  const benefitIcons = [TrendingUp, Clock, Heart];
 
   return (
     <section id="testimonials" className="py-20 bg-gray-50">
@@ -20,9 +22,9 @@ const Testimonials: React.FC = () => {
               key={index}
               className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all transform hover:scale-105"
             >
-              <div className="flex items-center space-x-1 mb-6">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+              <div className="flex items-center space-x-3 mb-6">
+                {benefitIcons.map((Icon, i) => (
+                  <Icon key={i} className="w-6 h-6 text-blue-600" />
                 ))}
               </div>
 

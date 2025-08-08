@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MessageCircle, Zap, CheckCircle } from 'lucide-react';
+import { MessageCircle, Zap, CheckCircle, Phone } from 'lucide-react';
 import { useContent } from '../contexts/ContentContext';
 
 const HeroSection: React.FC = () => {
@@ -13,23 +13,23 @@ const HeroSection: React.FC = () => {
           {/* Left Content */}
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-6">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight animate-fade-in">
                 {contentData.heroTitle.split(' ').map((word, index) =>
-                  word === 'WhatsApp' || word === '24/7' ? (
-                    <span key={index} className="text-blue-600">{word} </span>
+                  word === 'WhatsApp' || word === '24/7' || word === 'AI' ? (
+                    <span key={index} className="gradient-text animate-glow">{word} </span>
                   ) : (
-                    word + ' '
+                    <span key={index} className="text-gray-900">{word} </span>
                   )
                 )}
               </h1>
 
-              <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed">
+              <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed animate-fade-in">
                 {contentData.heroSubtitle}
               </p>
-              
-              <div className="bg-blue-600 text-white px-4 sm:px-6 py-3 sm:py-4 rounded-2xl inline-block transform hover:scale-105 transition-transform">
+
+              <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 sm:px-6 py-3 sm:py-4 rounded-2xl inline-block transform hover:scale-105 transition-all duration-300 neon-border animate-float">
                 <p className="text-base sm:text-lg font-semibold">
-                  <Zap className="inline-block w-5 h-5 mr-2" />
+                  <Zap className="inline-block w-5 h-5 mr-2 animate-pulse" />
                   {contentData.heroTagline}
                 </p>
               </div>
@@ -40,9 +40,11 @@ const HeroSection: React.FC = () => {
                 href="https://app.aibantuin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl w-full sm:w-auto inline-block text-center"
+                className="group relative bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-2xl w-full sm:w-auto inline-flex items-center justify-center gap-3 animate-pulse hover:animate-none"
               >
-                {contentData.ctaButtons.heroButton}
+                <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 group-hover:animate-bounce" />
+                <span>{contentData.ctaButtons.heroButton}</span>
+                <div className="absolute inset-0 bg-white/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <p className="text-sm text-gray-500 text-center lg:text-left">Setting cepat, langsung aktif di WA Anda.</p>
             </div>
